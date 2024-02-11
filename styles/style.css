@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Moki;
+    src: url(../fonts/Moki-Lean.ttf) format('truetype');
+}
+
+:root {
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-header: 'Moki';
+    --cor1: #F23545;
+    --cor2: #F2CB05;
+    --cor3: #F21D1D;
+    --cor4: #BFBFBF;
+    --cor5: #262626;
+    --cor6: #969696;
+}
+
+* {
+    font-family: var(--fonte-padrao);
+    text-align: justify;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    text-indent: 30px;
+    padding: 5px 20px 10px 20px;
+    font-size: 1em;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+img {
+    width: 100%;
+}
+
+picture {
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.footer_contacts > a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+    padding: 10px;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    background-color: var(--cor1);
+}
+
+h2 {
+    color: white;
+    padding: 10px 0px 10px 30px;
+    background-image: linear-gradient(to right, var(--cor3), var(--cor3));
+}
+
+header {
+    font-family: var(--fonte-header);
+    margin: 0px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.250);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+    position: relative;
+}
+
+.logo {
+    float: left;
+    margin-right: 0px;
+    margin-left: 20px;
+}
+
+/* h1 {
+    font-family: var(--fonte-header);
+    font-size: bold;
+    text-shadow: 1px 1px 1px var(--cor3);
+    font-size: 28px;
+    position: absolute;
+    right: 50px;
+} */
+
+main {
+    background-image: linear-gradient(to top, var(--cor1), var(--cor3));
+    min-width: 300px;
+    max-width: 100%;
+    margin: auto;
+}
+.resumo {
+    columns: 2 600px;
+    width: 100%;
+}
+
+article {
+    background-color: whitesmoke;
+    max-width: 90%;
+    max-height: auto;
+    margin: auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.320);
+}
+
+aside {
+    columns: 2 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+aside > ul {
+    columns: 2;
+}
+
+aside > ul > li {
+    padding: 20px 5px 20px 20px;
+    list-style-position: inside;
+}
+
+footer {
+    background-image: linear-gradient(to top, var(--cor6), var(--cor4));
+    margin: auto;
+}
+
+footer > p {
+    text-align: center;
+    padding: 5px
+}
+
+.footer_contacts {
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer_contacts > a {
+    text-decoration: none;
+}
